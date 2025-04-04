@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="width=device-width">
-
-	<link rel="stylesheet" href="style.css">
-	<title>Página inicial </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	
-	<div class="container">
-		<h1>Boas vindas!</h1>
-		<p>Vamos persoalizar essa bagaça com o javascript<p>
-		<div class ="saudacao" id="mensagemSaudacao">Olá, visitante!</div>
-		<button onClick="mudarNome()">Personalizar saudação</button>
-	</div>
-	
-	<script>
-		function mudarNome(){
-			let nome = "Jeff dos jeff"
-			document.getElementById("mensagemSaudacao").textContent = "Olá "+nome;
-		}
-		
-	</script>
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+    <p>Adicione suas tarefas!</p>
+    <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+    <p id="mensagem"></p>
+  </div>
+
+  <script>
+    function adicionarTarefa() {
+      let mensagem = "Tarefa adicionada com sucesso!";
+            document.getElementById("mensagem").textContent = mensagem;
+    }
+  </script>
 </body>
 </html>
